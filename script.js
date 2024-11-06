@@ -7,7 +7,7 @@ var typingStarted = false;
 var currentWordN = 0;
 var textWordList = [];
 var boolList = [];
-
+var ismobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 // import { wordList } from "./wordList.js";
 // Sample list of 1000 common English words
 
