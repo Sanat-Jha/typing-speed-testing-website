@@ -13,7 +13,7 @@ var ismobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 
 // Generate random text by selecting random words from the word list
-function generateRandomText(wordCount = ismobile ? 20 : 100) {
+function generateRandomText(wordCount = ismobile ? 25 : 100) {
     textWordList = [];
     for (let i = 0; i < wordCount; i++) {
         let randomWord = wordList[Math.floor(Math.random() * wordList.length)];
