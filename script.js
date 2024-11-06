@@ -7,12 +7,13 @@ var typingStarted = false;
 var currentWordN = 0;
 var textWordList = [];
 var boolList = [];
+
 // import { wordList } from "./wordList.js";
 // Sample list of 1000 common English words
 
 
 // Generate random text by selecting random words from the word list
-function generateRandomText(wordCount = 100) {
+function generateRandomText(wordCount = ismobile ? 20 : 100) {
     textWordList = [];
     for (let i = 0; i < wordCount; i++) {
         let randomWord = wordList[Math.floor(Math.random() * wordList.length)];
