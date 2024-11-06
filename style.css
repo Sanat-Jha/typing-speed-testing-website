@@ -44,3 +44,16 @@ nav{
     font-size: 20px;
     padding: 20px;
 }
+.result{
+    display: none;
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+}
+.current-word{
+    font-weight: bold;
+    font-size: 25px;
+}
