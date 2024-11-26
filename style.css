@@ -54,7 +54,7 @@ nav{
     display: none;
 }
 .correct{
-    color: green;
+    color: rgb(3, 216, 3);
 }
 .incorrect{
     color: red;
