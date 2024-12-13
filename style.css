@@ -8,6 +8,20 @@ body{
     text-align: center;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: cyan;
+}
+.toprightbatch{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0.5px 1px 5px cyan;
+    z-index: 5;
+    border-radius: 3px;
+}
 nav{
     padding: 15px;
     font-size: 20px;
@@ -62,4 +76,16 @@ nav{
 .current-word{
     font-weight: bold;
     font-size: 25px;
+}
+.tryagain{
+color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 3px cyan;
+    margin-top: 50px;
+    display: none;
+}
+.white{
+    color: white;
 }

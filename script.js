@@ -74,7 +74,7 @@ function startTypingTest() {
 
 // Timer function
 function startTimer() {
-    timer.innerText = 30;
+    timer.innerText = 59;
     var a = setInterval(() => {
         timer.innerText = timer.innerText - 1;
         if (timer.innerText == "0") {
@@ -82,9 +82,11 @@ function startTimer() {
             typingBox.style.display = "none";
             let resultbox = document.getElementsByClassName("result")[0];
             resultbox.style.display = "block";
+            document.getElementsByClassName("tryagain")[0].style.display = "block";
+            let accuracy = (correctWordCount / wordCount) * 100;
             
             // Show the results text separately
-            resultbox.innerHTML = `Total Words typed: ${wordCount} <br> Total Correct Words typed: ${correctWordCount}<br><br>`;
+            resultbox.innerHTML = `Total Words typed: ${wordCount} <br> Total Correct Words typed: ${correctWordCount}<br><br>Accuracy: ${accuracy.toFixed(2)}%<br><br>`;
             
             // Add the canvas for the chart
             const canvas = document.createElement("canvas");
